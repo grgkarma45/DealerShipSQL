@@ -24,7 +24,7 @@ public class LeaseContract extends Contract {
     }
 
     @Override
-    public String getMonthlyPayment() {
+    public double getMonthlyPayment() {
         double vehiclePrice = getVehicleSold().getPrice();
         double interestRate = 0.04; // 4.0%
         int loanTerm = 36;

@@ -21,9 +21,9 @@ public class ContractDataManager {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
 
             // Set the parameter values
-            preparedStatement.setString(1, contract.getMonthlyPayment());
+            preparedStatement.setString(1, contract.getDate());
             preparedStatement.setString(2, contract.getCustomerName());
-            preparedStatement.setDouble(3, contract.getTotalPrice());
+            preparedStatement.setString(3, contract.getCustomerEmail());
 
             // Execute the query
             preparedStatement.executeUpdate();
