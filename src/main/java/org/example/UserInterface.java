@@ -1,10 +1,7 @@
 package org.example;
-import org.example.DealerShip;
-import org.example.Vehicle;
 
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 

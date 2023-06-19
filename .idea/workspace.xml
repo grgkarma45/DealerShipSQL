@@ -4,49 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="720644c6-069e-455c-b817-d246ab98a90a" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change beforePath="$PROJECT_DIR$/inventory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/inventory.csv" afterDir="false" />
+    <list default="true" id="1669ee7c-b478-431b-b151-13243cd770b4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DealerShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DealerShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DealerShipFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DealerShipFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="510cf504-c88d-4527-b7a3-d0bd8bf318f6" />
-        <option name="url" value="https://github.com/grgkarma45/DealerShipApp.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2PhclTSd44dl1Kf8KYGeeTZgPrc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2RIbXZLFx7uZ16rjoDrqfTxiBHd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,149 +46,23 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/LearnToCode/Workbook4/DealerShipApp",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "inlay.hints"
+    "last_opened_file_path": "C:/LearnToCode/Workbook4/DealerShipApp"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\LearnToCode\Workbook4\DealerShipApp\src\main\java" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\LearnToCode\Workbook4\DealerShipApp" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="720644c6-069e-455c-b817-d246ab98a90a" name="Changes" comment="" />
-      <created>1683912908866</created>
+      <changelist id="1669ee7c-b478-431b-b151-13243cd770b4" name="Changes" comment="" />
+      <created>1686940583209</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1683912908866</updated>
+      <updated>1686940583209</updated>
     </task>
-    <task id="LOCAL-00001" summary="Initial Commit">
-      <created>1684330791991</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1684330791991</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Commit">
-      <created>1684434227390</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1684434227390</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Friday- Before lunch">
-      <created>1684515788360</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1684515788360</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Phase 2 of CarDealerShip">
-      <created>1684520938250</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1684520938251</updated>
-    </task>
-    <task id="LOCAL-00005" summary="3pm">
-      <created>1684782077339</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1684782077339</updated>
-    </task>
-    <task id="LOCAL-00006" summary="3pm">
-      <created>1684783695908</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1684783695908</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Project">
-      <created>1684986893938</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1684986893938</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Project">
-      <created>1684987202349</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1684987202349</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Project Completed">
-      <created>1684991737816</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1684991737816</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Project Completed">
-      <created>1684995035703</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1684995035703</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Readme file added">
-      <created>1684996996642</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1684996996642</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <created>1684999703256</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1684999703256</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <created>1684999724837</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1684999724837</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial Commit" />
-    <MESSAGE value="Commit" />
-    <MESSAGE value="Friday- Before lunch" />
-    <MESSAGE value="Phase 2 of CarDealerShip" />
-    <MESSAGE value="3pm" />
-    <MESSAGE value="Project" />
-    <MESSAGE value="Project Completed" />
-    <MESSAGE value="Readme file added" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.StackOverflowError" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
