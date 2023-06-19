@@ -4,68 +4,56 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.*;
 
 public class DealerShipFileManager {
-    public DealerShip getDealership(){
-        DealerShip dealerShip = null;
-        try { //we're creating filereader and bufferreader and passing the inventory.csv file into it.
-            FileReader fileReader = new FileReader("inventory.csv");
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            private static final String DB_URL = "jdbc:mysql://localhost:3306/dealership";
+            private static final String DB_USER = "Karma";
+            private static final String DB_PASSWORD = "Gurung";
 
-            String input;
-            input = bufferedReader.readLine();
-            String[] details = input.split("\\|");
-            String name = details[0];
-            String address = details[1];
-            String phone = details[2];
-            dealerShip = new DealerShip(name, address, phone);
+            public DealerShip getDealership() {
+                DealerShip dealerShip = new DealerShip();
 
-            while ((input = bufferedReader.readLine())!= null){
-                details = input.split("\\|");
-                String vin = details[0];
-                int year =Integer.parseInt( details[1]);
-                String make = details[2];
-                String model = details[3];
-                String vehicleType = details[4];
-                String color = details[5];
-                int odometer = Integer.parseInt(details[6]);
-                double price =Double.parseDouble(details[7]);
+                try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+                    Statement statement = connection.createStatement();
+                    ResultSet resultSet = statement.executeQuery("SELECT * FROM inventory");
 
-                Vehicle vehicle = new Vehicle(vin, year, make, model, vehicleType,color, odometer, price);
-                dealerShip.addVehicle(vehicle);
+                    while (resultSet.next()) {
+                        String vin = resultSet.getString("VIN");
+                        int year = resultSet.getInt("YEAR");
+                        String make = resultSet.getString("MAKE");
+                        String model = resultSet.getString("MODEL");
+                        String vehicleType = resultSet.getString("Type");
+                        String color = resultSet.getString("COLOR");
+                        int odometer = resultSet.getInt("ODOMETER");
+                        double price = resultSet.getDouble("PRICE");
 
+                        Vehicle vehicle = new Vehicle(vin, year, make, model, vehicleType, color, odometer, price);
+                        dealerShip.addVehicle(vehicle);
+                    }
+                } catch (SQLException e) {
+                    throw new RuntimeException("Error retrieving dealership inventory from the database: " + e.getMessage(), e);
+                }
 
-
+                return dealerShip;
             }
 
-        } catch (IOException e) {
-            System.out.println("File not found");
-            System.exit(0);
-        }
-        return dealerShip;
-    }
+            public static void saveDealership(DealerShip dealerShip) {
+                try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+                    Statement statement = connection.createStatement();
+                    statement.executeUpdate("TRUNCATE TABLE inventory");
 
-    public static void saveDealership(DealerShip dealerShip){
-        try (FileWriter fileWriter = new FileWriter("inventory.csv")) {
-            for (Vehicle v : dealerShip.getAllVehicles()) {
-                String vehicle = String.format("%s|%d|%s|%s|%s|%s|%d|%.2f\n",
-                        v.getVin(),
-                        v.getYear(),
-                        v.getMake(),
-                        v.getModel(),
-                        v.getVehicleType(),
-                        v.getColor(),
-                        v.getOdometer(),
-                        v.getPrice());
-                fileWriter.write(vehicle);
+                    for (Vehicle v : dealerShip.getAllVehicles()) {
+                        String query = String.format("INSERT INTO inventory (VIN, YEAR, MAKE, MODEL, Type, COLOR, ODOMETER, PRICE) " +
+                                        "VALUES ('%s', %d, '%s', '%s', '%s', '%s', %d, %.2f)",
+                                v.getVin(), v.getYear(), v.getMake(), v.getModel(), v.getVehicleType(),
+                                v.getColor(), v.getOdometer(), v.getPrice());
+                        statement.executeUpdate(query);
+                    }
+
+                    System.out.println("Changes have been saved to the database.");
+                } catch (SQLException e) {
+                    throw new RuntimeException("Error saving dealership inventory to the database: " + e.getMessage(), e);
+                }
             }
-            fileWriter.close();
-
-            System.out.println("Changes have been saved to file: " );
-        } catch (IOException e) {
-            System.err.println("Error saving dealership inventory");
         }
-
-    }
-
-}

@@ -11,7 +11,7 @@ public class DealerShip {
     private ArrayList<Vehicle> inventory = new ArrayList<>();
 
     // constructor
-    public DealerShip(String name, String address, String phone) {
+    public DealerShip() {
         this.name = name;
         this.address = address;
         this.phone = phone;
