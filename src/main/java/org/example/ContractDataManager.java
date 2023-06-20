@@ -11,9 +11,9 @@ import java.sql.Connection;
 
 public class ContractDataManager {
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/your_database";
-    private static final String DB_USER = "your_username";
-    private static final String DB_PASSWORD = "your_password";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/dealership";
+    private static final String DB_USER = "Karma";
+    private static final String DB_PASSWORD = "Gurung";
 
     public void saveContract(Contract contract) {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
